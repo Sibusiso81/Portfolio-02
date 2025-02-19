@@ -17,8 +17,8 @@ import { Input } from "@/components/ui/input";
 
 import { Toaster, toast } from "sonner";
 import { redirect } from "next/navigation";
-import { complileReachoutTemplate, sendMail } from "@/lib/actions/sendmail";
-
+/* import { complileReachoutTemplate, sendMail } from "@/lib/actions/sendmail";
+ */
 
 
 
@@ -94,12 +94,12 @@ function ProfileForm  ()  {
     const email = values.email;
     const username = values.username;
     const message = values.message;
-    await sendMail({
+   /*  await sendMail({
       to: "zulusibusiso81@gmail.com",
       name: `${values.email}going by:${values.username}`,
       subject: `${values.username} Reached Out!`,
       body: await complileReachoutTemplate({ email, username, message }),
-    });
+    }); */
     toast.success("Email sent!");
 
     console.log("Form submitted:", values);

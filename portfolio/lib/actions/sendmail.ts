@@ -1,16 +1,5 @@
-"use server";
-/* 
-Pages to build 
-1)About
--Inspiration from ultra framer temp
-2)Sign in /log in 
-use shadcn components
--use next.js auth
-3)Contact 
--use shadcn components 
-4)Dashboard
+/* "use server";
 
-*/
 
 import nodemailer from 'nodemailer'
 import Handlebars from "handlebars";
@@ -74,4 +63,4 @@ export async function complileReachoutTemplate({
   });
 
   return htmlBody;
-}
+} */
